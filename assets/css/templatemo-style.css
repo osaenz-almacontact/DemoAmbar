@@ -7,11 +7,11 @@ https://templatemo.com/tm-529-ramayana
 */
 
 
-@import url(fontawesome.css);
+@import url("century gothic".css);
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
 
 body {
-	font-family: 'Roboto Slab', sans-serif;
+	font-family: 'century gothic', sans-serif;
 }
 
 /* Basic */
@@ -37,6 +37,13 @@ h4 {
 	font-weight: 700;
 	color: #31323a;
 	letter-spacing: 0.25px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-family: "century gothic";
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 img {
@@ -638,7 +645,7 @@ input[type="checkbox"] + label:before,
 input[type="radio"] + label:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
+    font-family: "century gothic";
     font-style: normal;
     font-weight: normal;
     text-transform: none !important;
@@ -957,7 +964,7 @@ section.buttons .container-fluid {
 }
 
 #search form:before {
-	font-family: 'FontAwesome';
+	font-family: "century gothic";
     -moz-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     -ms-transform: scaleX(-1);
@@ -999,7 +1006,7 @@ section.buttons .container-fluid {
 #sidebar .toggle:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
+    font-family: "century gothic";
     font-style: normal;
     font-weight: normal;
     text-transform: none !important;
@@ -1250,7 +1257,7 @@ section.buttons .container-fluid {
     -ms-user-select: none;
     user-select: none;
     color: #3d4449;
-    font-family: "Roboto Slab", serif;
+    font-family: "Century Gothic", serif;
     font-family: 400;
     letter-spacing: 0.075em;
     list-style: none;
@@ -1294,7 +1301,7 @@ section.buttons .container-fluid {
 #menu ul span.opener:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
+    font-family: "century gothic";
     font-style: normal;
     font-weight: normal;
     text-transform: none !important;
