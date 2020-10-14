@@ -1,16 +1,17 @@
 /*
 
 Ramayana CSS Template
+
 https://templatemo.com/tm-529-ramayana
 
 */
 
 
-@import url("century gothic".css);
+@import url(fontawesome.css);
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
 
 body {
-	font-family: 'century gothic', sans-serif;
+    font-family: 'Century Gothic', sans-serif;
 }
 
 /* Basic */
@@ -644,7 +645,7 @@ input[type="checkbox"] + label:before,
 input[type="radio"] + label:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: "century gothic";
+    font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-transform: none !important;
@@ -963,7 +964,7 @@ section.buttons .container-fluid {
 }
 
 #search form:before {
-	font-family: "century gothic";
+	font-family: 'FontAwesome';
     -moz-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     -ms-transform: scaleX(-1);
@@ -1005,7 +1006,7 @@ section.buttons .container-fluid {
 #sidebar .toggle:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: "century gothic";
+    font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-transform: none !important;
@@ -1256,7 +1257,7 @@ section.buttons .container-fluid {
     -ms-user-select: none;
     user-select: none;
     color: #3d4449;
-    font-family: "Century Gothic", serif;
+    font-family: "century gothic", serif;
     font-family: 400;
     letter-spacing: 0.075em;
     list-style: none;
@@ -1300,7 +1301,7 @@ section.buttons .container-fluid {
 #menu ul span.opener:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: "century gothic";
+    font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-transform: none !important;
