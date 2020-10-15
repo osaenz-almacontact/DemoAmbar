@@ -8,7 +8,13 @@ https://templatemo.com/tm-529-ramayana
 
 
 @import url(fontawesome.css);
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+/*@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");*/
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../fonts/Century-Gothic_Alma.woff') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
 
 body {
     font-family: 'Century Gothic', sans-serif;

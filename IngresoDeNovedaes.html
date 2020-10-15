@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+    <title>Ramayana - Free Bootstrap 4 CSS Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--
+    Ramayana CSS Template
+    https://templatemo.com/tm-529-ramayana
+    -->
+
+    
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+</head>
+
+<body class="is-preload">
+
+
+    <!-- LOGO HEADER END-->
+    <form method="post" action="./IngresoDeNovedades" id="ctl01" enctype="multipart/form-data">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                value="bVutvcun1FThwjw03LfVwfEmAcRsmcBPalbzHAtgaS/snfSTSfmw2eVCleghGzTOoWPEfRJxVahomqJzcBP+5sc/VnI7CrUMKu7eQ49cr8KWD1OT4VBdYISyFz1DoPt1QE61qsU0s6+3hWeTy5qccA==" />
+        </div>
+
+        <div class="aspNetHidden">
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="0816C97C" />
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+                value="p2O/lx1O7Xuc79MtkYd1bYvGsYWINnyAF62WX75io6F7+Diw7jL4rvOMSyZFuvShpVfrX8GH7phoroVEVnZihffiUhsrWCy1YE/n8zj0Q4WoQmU/kwssVLWV67BBJySjxiEe4rraZ97jUqcP7INzcQlMQliE5xRbLeLP3TjM8uE=" />
+        </div>
+        <div id="wrapper">
+            <div id="main">
+                <div class="inner">
+                    <!-- Header -->
+                    <header id="header">
+                        <div class="logo">
+                            <a href="index.html" style="font-size: 20px">
+                                <span id="LabNombres" style="color:White;font-size:15px;">Nombres y apellidos</span></a>
+                        </div>
+                    </header>
+
+                    <script src="/Scripts/jquery/jquery.js"></script>
+                    <script>
+                        $(document).ready(function () {
+                            $('#PNotaIncapaccidad').hide();
+                            $('#PNotaIncapaccidadDos').hide();
+                            $('#PNotaPermiso').hide();
+                            $('#PDiaElectoral').hide();
+                            $('#TxtHorario').hide();
+
+                            $("div[id=DivIncapacidad]").click(function () {
+                                $('#DivIncapacidad').css('background-color', '#21618C');
+                                $('#DivPermisos').css('background-color', '#eaebef');
+                                $('#DivDiaElectoral').css("background-color", '#eaebef');
+                                $('#DivVacaciones').css('background-color', '#eaebef');
+
+                                $('#PNotaIncapaccidad').show();
+                                $('#PNotaIncapaccidadDos').hide();
+                                $('#PNotaPermiso').hide();
+                                $('#PNotaIncapaccidad').hide();
+                                $('#DivHoraInicio').hide();
+                                $('#DivHoraFin').hide();
+                                $('#DivCargarArchivo').show();
+                                //alert("incapacidad");
+                            });
+
+                            $("div[id=DivPermisos]").click(function () {
+                                $('div[id=DivIncapacidad]').css('background-color', '#eaebef');
+                                $('div[id=DivPermisos]').css('background-color', '#21618C');
+                                $('div[id=DivDiaElectoral]').css('background-color', '#eaebef');
+                                $('div[id=DivVacaciones]').css('background-color', '#eaebef');
+
+                                $('#PNotaIncapaccidad').hide();
+                                $('#PNotaIncapaccidadDos').show();
+                                $('#PNotaPermiso').hide();
+                                $('#PNotaIncapaccidad').hide();
+                                $('#DivHoraInicio').show();
+                                $('#DivHoraFin').show();
+                                $('#DivCargarArchivo').hide();
+                                //alert("pemisos");
+                            });
+
+                            $("div[id=DivDiaElectoral]").click(function () {
+                                $('div[id=DivIncapacidad]').css("background-color", "#eaebef");
+                                $('div[id=DivPermisos]').css("background-color", "#eaebef");
+                                $('div[id=DivDiaElectoral]').css("background-color", "#21618C");
+                                $('div[id=DivVacaciones]').css("background-color", "#eaebef");
+
+                                $('#PNotaIncapaccidad').hide();
+                                $('#PNotaIncapaccidadDos').hide();
+                                $('#PNotaPermiso').hide();
+                                $('#PNotaIncapaccidad').hide();
+                                $('#DivHoraInicio').show();
+                                $('#DivHoraFin').show();
+                                $('#DivCargarArchivo').hide();
+                                //alert("dia electoral");
+                            });
+
+
+                            $("div[id=DivVacaciones]").click(function () {
+                                $('div[id=DivIncapacidad]').css("background-color", "#eaebef");
+                                $('div[id=DivPermisos]').css("background-color", "#eaebef");
+                                $('div[id=DivDiaElectoral]').css("background-color", "#eaebef");
+                                $('div[id=DivVacaciones]').css("background-color", "#21618C");
+
+                                $('#PNotaIncapaccidad').hide();
+                                $('#PNotaIncapaccidadDos').hide();
+                                $('#PNotaPermiso').hide();
+                                $('#PNotaIncapaccidad').hide();
+                                $('#DivHoraInicio').hide();
+                                $('#DivHoraFin').hide();
+                                $('#DivCargarArchivo').hide();
+
+                            });
+
+
+                        });
+                    </script>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Ingreso de Novedades</h1>
+                        </div>
+                    </div>
+                    <hr />
+                    <section class="forms">
+                        <div class="container-fluid">
+
+                            <div class="row">
+                                <div class="col-md-4">
+
+                                    <br />
+                                    <br />
+                                    <!-- Tables -->
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-12">
+
+                                                <div
+                                                    class="d-flex align-items-center mb-9 alert alert-success rounded p-2">
+                                                    <!--begin::Title-->
+                                                    <div class="d-flex flex-column flex-grow-1 mr-2">
+                                                        <a
+                                                            class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Incapacidad</a>
+                                                        <span class="text-muted font-weight-bold">17 Oct 2020 - 21 Oct
+                                                            2020</span>
+                                                    </div>
+                                                    <!--end::Title-->
+                                                    <!--begin::Lable-->
+                                                    <span
+                                                        class="font-weight-bolder text-warning py-1 font-size-lg">AP</span>
+                                                    <!--end::Lable-->
+                                                </div>
+
+                                                <div
+                                                    class="d-flex align-items-center mb-9 alert alert-danger rounded p-2">
+                                                    <!--begin::Title-->
+                                                    <div class="d-flex flex-column flex-grow-1 mr-2">
+                                                        <a href="#"
+                                                            class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Vacaciones</a>
+                                                        <span class="text-muted font-weight-bold">11 Jul 2020 - 30 Jul
+                                                            2020</span>
+                                                    </div>
+                                                    <!--end::Title-->
+                                                    <!--begin::Lable-->
+                                                    <span
+                                                        class="font-weight-bolder text-warning py-1 font-size-lg">RH</span>
+                                                    <!--end::Lable-->
+                                                </div>
+
+                                                <div
+                                                    class="d-flex align-items-center mb-9 alert alert-primary rounded p-2">
+                                                    <!--begin::Title-->
+                                                    <div class="d-flex flex-column flex-grow-1 mr-2">
+                                                        <a href="#"
+                                                            class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Group
+                                                            lunch celebration</a>
+                                                        <span class="text-muted font-weight-bold">17 Oct 2020 - 21 Oct
+                                                            2020</span>
+                                                    </div>
+                                                    <!--end::Title-->
+                                                    <!--begin::Lable-->
+                                                    <span
+                                                        class="font-weight-bolder text-warning py-1 font-size-lg">PD</span>
+                                                    <!--end::Lable-->
+                                                </div>
+
+                                                <div
+                                                    class="d-flex align-items-center mb-9 alert alert-success rounded p-2">
+                                                    <!--begin::Title-->
+                                                    <div class="d-flex flex-column flex-grow-1 mr-2">
+                                                        <a href="#"
+                                                            class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Group
+                                                            lunch celebration</a>
+                                                        <span class="text-muted font-weight-bold">Due in 2 Days</span>
+                                                    </div>
+                                                    <!--end::Title-->
+                                                    <!--begin::Lable-->
+                                                    <span
+                                                        class="font-weight-bolder text-warning py-1 font-size-lg">+28%</span>
+                                                    <!--end::Lable-->
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-md-8">
+                                    <section class="services">
+
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <div id="DivIncapacidad" class="service-item first-item"
+                                                        style="padding: 15px">
+                                                        <div class="icon" style="height: 10px">
+                                                            <i
+                                                                class="icon-2x color-light fa fa-user-md fa-2x fa-lg"></i>
+                                                        </div>
+                                                        <a class="pull">
+                                                            <h5 style="color: #31323a">Incapacidades</h5>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div id="DivPermisos" class="service-item second-item"
+                                                        style="padding: 15px">
+                                                        <div class="icon" style="height: 10px">
+                                                            <i
+                                                                class="icon-2x color-light fa fa-check-circle-o fa-2x fa-lg"></i>
+                                                        </div>
+                                                        <a class="pull">
+                                                            <h5 style="color: #31323a">Permisos</h5>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div id="DivDiaElectoral" class="service-item third-item"
+                                                        style="padding: 15px">
+                                                        <div class="icon" style="height: 10px">
+                                                            <i
+                                                                class="icon-2x color-light fa fa-university fa-2x fa-lg"></i>
+                                                        </div>
+                                                        <a class="pull">
+                                                            <h5 style="color: #31323a">Dia Electoral</h5>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div id="DivVacaciones" class="service-item fourth-item"
+                                                        style="padding: 15px">
+                                                        <div class="icon" style="height: 10px">
+                                                            <i class="icon-2x color-light fa fa-plane fa-2x fa-lg"></i>
+                                                        </div>
+                                                        <a class="pull">
+                                                            <h5 class="pull" style="color: #31323a">Vacaciones</h5>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--container--->
+
+                                    </section>
+                                    <br />
+                                    <!-- Forms -->
+
+                                    <div class="col-md-12">
+                                        <div class="section-heading">
+                                            <p class="bg-warning" id="PNotaIncapaccidad"><strong>Nota:</strong> Para
+                                                incapacidades superiores a <b>2 Dias</b> deben entregar el historial
+                                                médico + la incapacidad original.</p>
+                                            <p class="bg-warning" id="PNotaIncapaccidadDos"><strong>Nota 2:</strong>
+                                                Tenga en cuenta que si su incapacidad no corresponde al POS deberá
+                                                transcribirla ante su EPS y a su vez adjuntar historia Clínica.</p>
+                                            <p class="bg-warning" id="PNotaPermiso"><strong>Nota:</strong> Recuerde que
+                                                antes de registrar el permiso debe tener el visto bueno de <b>Americas
+                                                    B.P.S.</b> y de la <b>B.U.</b></p>
+                                            <p class="bg-warning" id="PDiaElectoral"><strong>Nota:</strong> Recuerde que
+                                                tiene plazo de solicitar el medio día dentro dento de los primeros <b>30
+                                                    Dias</b> calendario después de la votación.</p>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <fieldset>
+                                                    <input name="ctl00$MainContent$TxtNombre" type="text"
+                                                        id="MainContent_TxtNombre" class="form-control"
+                                                        placeholder="Tu Nombre..." required="" />
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <fieldset>
+                                                    <input name="ctl00$MainContent$TxtApellido" type="text"
+                                                        id="MainContent_TxtApellido" class="form-control"
+                                                        placeholder="Tu Apellido..." required="" />
+                                                </fieldset>
+                                            </div>
+                                            <hr />
+                                            <div class="col-md-6">
+                                                <fieldset>
+                                                    <input name="ctl00$MainContent$TxtFechaInicio" type="date"
+                                                        id="MainContent_TxtFechaInicio" class="form-control"
+                                                        placeholder="Tu Nombre..." required="" />
+                                                </fieldset>
+                                                <fieldset>
+                                                    <div id="DivHoraInicio">
+                                                        <input name="ctl00$MainContent$TxtHoraInicio" type="time"
+                                                            id="MainContent_TxtHoraInicio" class="form-control"
+                                                            placeholder="Tu Nombre..." required="" />
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <fieldset>
+                                                    <input name="ctl00$MainContent$TxtFechaFin" type="date"
+                                                        id="MainContent_TxtFechaFin" class="form-control"
+                                                        placeholder="Tu Apellido..." required="" />
+                                                </fieldset>
+                                                <fieldset>
+                                                    <div id="DivHoraFin">
+                                                        <input name="ctl00$MainContent$TxtHoraFin" type="time"
+                                                            id="MainContent_TxtHoraFin" class="form-control"
+                                                            placeholder="Tu Nombre..." required="" />
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <fieldset>
+                                                    <input name="ctl00$MainContent$TxtNumeroDias" type="text"
+                                                        id="MainContent_TxtNumeroDias" class="form-control"
+                                                        placeholder="# Dias" required="" />
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-md-12" id="DivCargarArchivo">
+                                                <fieldset>
+                                                    <input type="file" name="ctl00$MainContent$FlpCargarArchivo"
+                                                        id="MainContent_FlpCargarArchivo" CssClasss="form-control" />
+                                                </fieldset>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <textarea name="demo-message" id="demo-message"
+                                                    placeholder="Enter your message" rows="6"></textarea>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <button type="submit" id="form-submit" class="button">Enviar</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                </div>
+            </div>
+            <!-- CONTENT-WRAPPER SECTION END-->
+            <!-- Sidebar -->
+            <div id="sidebar">
+
+                <div class="inner">
+
+                    <!-- Search Box -->
+                    <section id="search" class="alt">
+                        <div class="container" style="max-width: 300px;">
+                            <br />
+                            <a href="Default.aspx">
+                                <img id="Image1" src="assets/images/logo.png" style="border-style:None;" />
+                                <br />
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- Menu -->
+                    <nav id="menu">
+                        <ul>
+                            <li><a href="../">Dashboard</a></li>
+                            <li><a href="simple_page.html">Nomina</a></li>
+                            <li>
+                                <span class="opener">Empresa</span>
+                                <ul>
+                                    <li><a href="../Empresa/MisionVision.aspx">Visión y equipo</a></li>
+                                    <li><a href="../Empresa/Oficinas.aspx">Oficinas</a></li>
+                                    <li><a href="../Empresa/GrupoAlmaViva.aspx">Grupo AlmavivA</a></li>
+                                    <li><a href="../Empresa/PresenciaGlobal.aspx">Presencia global</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="opener">Human Resources</span>
+                                <ul>
+                                    <li><a href="#">Brigadistas</a></li>
+                                    <li><a href="#">Entrenamiento</a></li>
+                                    <li><a href="#">Organigrama</a></li>
+                                    <li><a href="../RecursosHumanos/Documentacion/Documentacion.aspx">Documetacion</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="opener">IT</span>
+                                <ul>
+                                    <li><a href="#">¿Como creo un PST?</a></li>
+                                    <li><a href="#">Aplicaciones</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="opener">Clima y Liderazgo</span>
+                                <ul>
+                                    <li><a href="../ClimaYLiderazgo/ClimaYLiderazgo.aspx">Clima</a></li>
+                                    <li><a href="../COVID/CovidDocumentos.aspx">Liderazgo</a></li>
+                                    <li><a href="../COVID/CovidDocumentos.aspx">Adminitracion Clima</a></li>
+                                    <li><a href="../COVID/CovidDocumentos.aspx">Administracion Liderazgo</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="opener">COVID-19</span>
+                                <ul>
+                                    <li><a href="../COVID/Videos/CovidVideo.aspx">Videos</a></li>
+                                    <li><a href="../COVID/CovidDocumentos.aspx">Documentación</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Featured Posts -->
+                    <div class="featured-posts">
+                        <div class="heading">
+                            <h2>Featured Posts</h2>
+                        </div>
+                        <div class="owl-carousel owl-theme">
+                            <a href="#">
+                                <div class="featured-item">
+                                    <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Noticias</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="featured-item">
+                                    <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Noticias</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="featured-item">
+                                    <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Noticias</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Footer -->
+                    <footer id="footer">
+                        <p class="copyright">
+                            Copyright &copy; 2020 Almacontact
+                        </p>
+                    </footer>
+
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="/Scripts/jquery/jquery.js"></script>
+    <script src="/Scripts/jquery/jquery.min.js"></script>
+    <script src="/Scripts/bootstrap.bundle.min.js"></script>
+
+    <script src="/Scripts/JS/browser.min.js"></script>
+    <script src="/Scripts/JS/breakpoints.min.js"></script>
+    <script src="/Scripts/JS/transition.js"></script>
+    <script src="/Scripts/JS/owl-carousel.js"></script>
+    <script src="/Scripts/JS/custom.js"></script>
+</body>
+
+</html>
